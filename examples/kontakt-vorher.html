@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Kontakt</title>
+</head>
+<body>
+  <h1>Kontakt</h1>
+  <form action="/senden" method="post">
+    <h3>Ihre Angaben</h3>
+    <input type="text" name="name" placeholder="Name *">
+    <label>E-Mail *</label>
+    <input type="email" name="email">
+    <input type="tel" name="telefon" placeholder="Telefon" style="outline: none">
+
+    <p>Ihr Anliegen</p>
+    <input type="radio" name="anliegen" value="frage" id="a1"><label for="a1">Frage</label>
+    <input type="radio" name="anliegen" value="termin" id="a2"><label for="a2">Termin</label>
+
+    <label for="nachricht">Nachricht *</label>
+    <textarea id="nachricht" name="nachricht"></textarea>
+
+    <label for="rechnen">Spamschutz: Wie viel ist 3 + 4?</label>
+    <input id="rechnen" name="spamschutz">
+
+    <button type="submit"><img src="senden.svg"></button>
+  </form>
+</body>
+</html>

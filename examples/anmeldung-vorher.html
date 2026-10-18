@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Anmelden</title>
+</head>
+<body>
+  <h1>Anmelden</h1>
+  <form action="/login" method="post">
+    <label for="benutzer">Benutzername</label>
+    <input id="benutzer" name="benutzer">
+
+    <label for="passwort">Passwort</label>
+    <input id="passwort" name="passwort" type="password" onpaste="return false">
+
+    <label for="rechnen">Bitte rechnen: Wie viel ist 7 + 5?</label>
+    <input id="rechnen" name="rechnen">
+
+    <div class="submit-btn" onclick="document.forms[0].submit()">Anmelden</div>
+  </form>
+</body>
+</html>

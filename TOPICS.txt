@@ -1,0 +1,12 @@
+# Suggested GitHub topics (lowercase, one per line)
+accessibility
+a11y
+wcag
+wcag22
+forms
+html
+bfsg
+bitv
+linter
+cli
+typescript

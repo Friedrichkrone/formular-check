@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+  <meta charset="utf-8">
+  <title>Bestellung</title>
+  <style>
+    input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid #1a56db; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <h1>Bestellung</h1>
+  <form action="/bestellen" method="post">
+    <div role="status" id="bestellung-status"></div>
+
+    <label for="sprache">Sprache</label>
+    <select id="sprache" name="sprache">
+      <option>Deutsch</option>
+      <option>English</option>
+    </select>
+
+    <label for="menge">Menge</label>
+    <input id="menge" name="menge" type="number" aria-invalid="true" aria-describedby="menge-fehler">
+    <p id="menge-fehler">Bitte eine Menge von 1 bis 99 eingeben.</p>
+
+    <label for="plz">Postleitzahl</label>
+    <input id="plz" name="plz" inputmode="numeric" autocomplete="postal-code">
+
+    <img src="hinweis.png" alt="Hinweis">
+    <a href="/hilfe">Hilfe zur Bestellung</a>
+    <button type="button" aria-label="Hilfe öffnen"><svg aria-hidden="true" focusable="false"><path d="M0 0h1"/></svg></button>
+    <button type="submit">Bestellen</button>
+  </form>
+  <iframe src="/karte.html" title="Karte mit Abholstellen"></iframe>
+</body>
+</html>

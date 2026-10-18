@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Anmelden</title>
+</head>
+<body>
+  <h1>Anmelden</h1>
+  <form action="/login" method="post">
+    <div role="status" id="anmeldung-status"></div>
+
+    <label for="benutzer">Benutzername</label>
+    <input id="benutzer" name="benutzer" autocomplete="username">
+
+    <label for="passwort">Passwort</label>
+    <input id="passwort" name="passwort" type="password" autocomplete="current-password">
+
+    <button type="submit">Anmelden</button>
+  </form>
+</body>
+</html>

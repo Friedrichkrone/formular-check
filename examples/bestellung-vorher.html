@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de_DE">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="600">
+  <title>Bestellung</title>
+  <style>
+    input:focus { outline: none; }
+  </style>
+</head>
+<body>
+  <h1>Bestellung</h1>
+  <form action="/bestellen" method="post">
+    <label for="sprache">Sprache</label>
+    <select id="sprache" name="sprache" onchange="this.form.submit()">
+      <option>Deutsch</option>
+      <option>English</option>
+    </select>
+
+    <label for="menge">Menge</label>
+    <input id="menge" name="menge" type="number" tabindex="2" aria-invalid="true">
+
+    <label for="plz">Postleitzahl</label>
+    <input id="postleitzahl" name="plz">
+
+    <img src="hinweis.png">
+    <a href="/hilfe"><svg class="icon"><path d="M0 0h1"/></svg></a>
+    <button type="button"><svg><path d="M0 0h1"/></svg></button>
+    <button type="submit">Bestellen</button>
+  </form>
+  <iframe src="/karte.html"></iframe>
+</body>
+</html>

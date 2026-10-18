@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt</title>
+</head>
+<body>
+  <h1>Kontakt</h1>
+  <form action="/senden" method="post">
+    <h2>Ihre Angaben</h2>
+    <p>Felder mit * sind Pflichtfelder.</p>
+    <div role="status" id="kontakt-status"></div>
+
+    <label for="name">Name *</label>
+    <input id="name" type="text" name="name" autocomplete="name" required>
+
+    <label for="email">E-Mail *</label>
+    <input id="email" type="email" name="email" autocomplete="email" required>
+
+    <label for="telefon">Telefon</label>
+    <input id="telefon" type="tel" name="telefon" autocomplete="tel">
+
+    <fieldset>
+      <legend>Ihr Anliegen</legend>
+      <input type="radio" name="anliegen" value="frage" id="a1"><label for="a1">Frage</label>
+      <input type="radio" name="anliegen" value="termin" id="a2"><label for="a2">Termin</label>
+    </fieldset>
+
+    <label for="nachricht">Nachricht *</label>
+    <textarea id="nachricht" name="nachricht" required></textarea>
+
+    <button type="submit">Nachricht senden</button>
+  </form>
+</body>
+</html>
